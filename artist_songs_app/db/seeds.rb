@@ -52,3 +52,49 @@ SongArtist.create!(song_id: s5.id, artist_id: a3.id )
 
 
 
+
+#-----------------------------------------------------------------------------------#
+
+c1 =Cat.create!(name:'Rudolf', age: 23)
+c2 =Cat.create!(name:'John', age: 2)
+c3 =Cat.create!(name:'Jack', age: 5)
+c4 =Cat.create!(name:'Claude', age: 16)
+c5 =Cat.create!(name:'Sylvester', age: 18)
+
+h1 = House.create!(color:'blue')
+h2 = House.create!(color:'yellow')
+h3 = House.create!(color:'red')
+h4 = House.create!(color:'green')
+h5 = House.create!(color:'pink')
+
+
+
+CatHouse.create!(cat_id: c1.id, house_id: h1.id)
+CatHouse.create!(cat_id: c2.id, house_id: h1.id)
+CatHouse.create!(cat_id: c5.id, house_id: h1.id)
+
+CatHouse.create!(cat_id: c3.id, house_id: h2.id)
+CatHouse.create!(cat_id: c5.id, house_id: h2.id)
+
+CatHouse.create!(cat_id: c2.id, house_id: h3.id)
+CatHouse.create!(cat_id: c1.id, house_id: h3.id)
+CatHouse.create!(cat_id: c4.id, house_id: h3.id)
+CatHouse.create!(cat_id: c5.id, house_id: h3.id)
+
+CatHouse.create!(cat_id: c1.id, house_id: h4.id)
+CatHouse.create!(cat_id: c2.id, house_id: h4.id)
+CatHouse.create!(cat_id: c3.id, house_id: h4.id)
+
+
+CatHouse.create!(cat_id: c1.id, house_id: h5.id)
+CatHouse.create!(cat_id: c2.id, house_id: h5.id)
+CatHouse.create!(cat_id: c3.id, house_id: h5.id)
+CatHouse.create!(cat_id: c4.id, house_id: h5.id)
+CatHouse.create!(cat_id: c5.id, house_id: h5.id)
+
+
+
+
+
+
+
